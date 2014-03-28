@@ -22,10 +22,11 @@ group :assets do
 end
 
 group :test do
-	gem 'capybara', '1.1.2'
+	gem 'capybara'
 end
 group :production do 
-	gem 'pg', '0.12.2'
+	gem 'pg'
+	gem 'rails_12factor'
 end
 
 # See https://github.com/sstephenson/execjs#readme for more supported runtimes
