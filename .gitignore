@@ -19,4 +19,7 @@
 doc/
 *.swp
 * ̃
-.project .DS Store
+.project 
+.DS Store
+
+bundler_stubs/
