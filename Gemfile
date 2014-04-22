@@ -3,12 +3,17 @@ source 'https://rubygems.org'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.0.4'
 gem 'bootstrap-sass'
+gem 'bcrypt-ruby'
+
+group :development, :test do
+  gem 'rspec-rails', '~> 2.13.1'
+end
 
 group :development do
 	# Use sqlite3 as the database for Active Record
-	gem 'sqlite3'
-	gem 'rspec-rails' 
+	gem 'sqlite3' 
 	gem 'guard-rspec'
+	gem 'annotate'
 end
 
 group :assets do
@@ -24,8 +29,7 @@ group :assets do
 end
 
 group :test do
-	gem 'capybara'
-	gem 'rspec-rails' 
+	gem 'capybara', '~>2.2.0'
 	gem 'guard-spork'
 	gem 'spork', :github => 'sporkrb/spork'
 	gem 'spork-rails', :github => 'sporkrb/spork-rails'
