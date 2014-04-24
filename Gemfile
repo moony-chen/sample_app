@@ -36,6 +36,7 @@ group :test do
 
 	gem 'rb-fsevent', :require => false 
 	gem 'growl'
+	gem 'factory_girl_rails'
 end
 group :production do 
 	gem 'pg'
