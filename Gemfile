@@ -1,7 +1,7 @@
 source 'https://rubygems.org'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
-gem 'rails', '4.0.4'
+gem 'rails', '4.1'
 gem 'bootstrap-sass'
 gem 'bcrypt-ruby'
 
@@ -37,6 +37,8 @@ group :test do
 	gem 'rb-fsevent', :require => false 
 	gem 'growl'
 	gem 'factory_girl_rails'
+	gem 'cucumber-rails', '1.4.0', :require => false
+  gem 'database_cleaner', github: 'bmabey/database_cleaner'
 end
 group :production do 
 	gem 'pg'
