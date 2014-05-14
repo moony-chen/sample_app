@@ -4,9 +4,12 @@ source 'https://rubygems.org'
 gem 'rails', '4.1'
 gem 'bootstrap-sass'
 gem 'bcrypt-ruby'
+gem 'faker', '1.1.2'
+gem 'will_paginate', '3.0.5'
+gem 'bootstrap-will_paginate', '0.0.10'
 
 group :development, :test do
-  gem 'rspec-rails', '~> 2.13.1'
+  gem 'rspec-rails', '~> 2.14.2'
 end
 
 group :development do
